@@ -1,11 +1,11 @@
 {
     "name": "@oseelabs/react-hooks",
-    "version": "0.0.4",
+    "version": "0.1.0",
     "main": "lib/index.js",
     "types": "lib/index.d.ts",
-	"author": "Lazaro Osee <odiraoseelazaro@gmail.com>",
-	"license": "ISC",
-	"repository": "https://github.com/oseelabs/react-hooks",
+    "author": "Lazaro Osee <odiraoseelazaro@gmail.com>",
+    "license": "ISC",
+    "repository": "https://github.com/oseelabs/react-hooks",
     "files": [
         "lib/**/*"
     ],
@@ -21,14 +21,14 @@
     "peerDependencies": {
         "react": "*"
     },
-	"keywords": [
-		"React",
-		"Hooks",
-		"Custom",
-		"Hooks",
-		"React",
-		"Hooks",
-		"React",
-		"Library"
-	]
+    "keywords": [
+        "React",
+        "Hooks",
+        "Custom",
+        "Hooks",
+        "React",
+        "Hooks",
+        "React",
+        "Library"
+    ]
 }
