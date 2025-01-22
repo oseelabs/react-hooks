@@ -1,0 +1,18 @@
+{
+    "name": "@oseelabs/react-hooks",
+    "version": "0.0.4",
+    "main": "lib/index.js",
+    "types": "lib/index.d.ts",
+    "files": [
+        "lib/**/*"
+    ],
+    "scripts": {
+        "tsc": "tsc"
+    },
+    "devDependencies": {
+        "typescript": "^5.7.3"
+    },
+    "dependencies": {
+        "react": "^19.0.0"
+    }
+}
