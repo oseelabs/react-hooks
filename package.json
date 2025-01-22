@@ -1,6 +1,6 @@
 {
     "name": "@oseelabs/react-hooks",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "main": "lib/index.js",
     "types": "lib/index.d.ts",
     "description": "A collection of custom React hooks for building React applications.",
@@ -10,8 +10,8 @@
     "files": [
         "lib/**/*"
     ],
-    "publishConfig": { 
-        "@oseelabs:registry": "https://npm.pkg.github.com" 
+    "publishConfig": {
+        "@oseelabs:registry": "https://npm.pkg.github.com"
     },
     "scripts": {
         "tsc": "tsc"
