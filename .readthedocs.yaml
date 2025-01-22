@@ -1,52 +1,13 @@
-# Read the docs configuration file
-# See https://docs.readthedocs.io/en/stable/config-file/v2.html for details
-
-# Required
 version: 2
 
-# Set the OS, Python version, and othe rtools you might need
 build:
-  os: ubuntu-24.04
+  os: "ubuntu-22.04"
   tools:
-    # ruby: "3.3"
-    nodejs: "22"
-  jobs:
-    post_build:
-      - echo "Post build step"
+    python: "3.8"
 
-  # Python configuration (if you need Sphinx extensions or dependencies)
-  python:
-    install:
-      - method: pip
-      path: .
-
-  # Commands to build your documentation
-  sphinx:
-    configuration: docs/conf.py
-
-  # Documentation settings
-  formats:
-    - pdf
-    - epub
-    - htmlzip
-    - html
-
-  # Ensure proper Node.js dependencies are installed
+python:
   install:
-    - requirements: 
-      - docs/requirements.txt
-    - commands:
-      - npm install
-      - npm run docs:build
+    - requirements: docs/requirements.txt
 
-  # Output directory for the generated documentation
-  artifacts:
-    html:
-      dir: $READTHEDOCS_OUTPUT/html
-
-  # commands:
-  #   # Install dependencies
-  #   - gem install bundle
-  #   - bundle install
-  #   # Build the site and save geerated files into Read The Docs directory
-  #   - jekyll build --destination $READTHEDOCS_OUTPUT/html
+sphinx:
+  configuration: docs/source/conf.py
