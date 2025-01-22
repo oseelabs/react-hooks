@@ -8,11 +8,45 @@ version: 2
 build:
   os: ubuntu-24.04
   tools:
-    ruby: "3.3"
+    # ruby: "3.3"
+    nodejs: "22"
+  jobs:
+    post_build:
+      - echo "Post build step"
 
-  commands:
-    # Install dependencies
-    - gem install bundle
-    - bundle install
-    # Build the site and save geerated files into Read The Docs directory
-    - jekyll build --destination $READTHEDOCS_OUTPUT/html
+  # Python configuration (if you need Sphinx extensions or dependencies)
+  python:
+    install:
+      - method: pip
+      path: .
+
+  # Commands to build your documentation
+  sphinx:
+    configuration: docs/conf.py
+
+  # Documentation settings
+  formats:
+    - pdf
+    - epub
+    - htmlzip
+    - html
+
+  # Ensure proper Node.js dependencies are installed
+  install:
+    - requirements: 
+      - docs/requirements.txt
+    - commands:
+      - npm install
+      - npm run docs:build
+
+  # Output directory for the generated documentation
+  artifacts:
+    html:
+      dir: $READTHEDOCS_OUTPUT/html
+
+  # commands:
+  #   # Install dependencies
+  #   - gem install bundle
+  #   - bundle install
+  #   # Build the site and save geerated files into Read The Docs directory
+  #   - jekyll build --destination $READTHEDOCS_OUTPUT/html
