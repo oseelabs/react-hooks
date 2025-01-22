@@ -10,9 +10,6 @@
     "files": [
         "lib/**/*"
     ],
-    "publishConfig": {
-        "@oseelabs:registry": "https://npm.pkg.github.com"
-    },
     "scripts": {
         "tsc": "tsc"
     },
