@@ -3,6 +3,7 @@
     "version": "0.1.0",
     "main": "lib/index.js",
     "types": "lib/index.d.ts",
+    "description": "A collection of custom React hooks for building React applications.",
     "author": "Lazaro Osee <odiraoseelazaro@gmail.com>",
     "license": "ISC",
     "repository": "https://github.com/oseelabs/react-hooks",
