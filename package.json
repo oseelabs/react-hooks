@@ -14,13 +14,11 @@
         "tsc": "tsc"
     },
     "devDependencies": {
+        "@types/react": "^19.0.7",
         "typescript": "^5.7.3"
     },
     "dependencies": {
-        "react": "^19.0.0"
-    },
-    "peerDependencies": {
-        "react": "*"
+        "react": "^18.0.0"
     },
     "keywords": [
         "React",
